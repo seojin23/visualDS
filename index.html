@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자료구조 시각화 도구</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- D3.js CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>자료구조 시각화 프로그램</h1>
+      <div class="desc">
+        주요 자료구조의 동작을 직접 시각적으로 확인하고 학습할 수 있는 웹
+        도구입니다.
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item" onclick="goToVisualization('list')">
+          <div class="menu-icon">📝</div>
+          <div class="menu-content">
+            <h3>List</h3>
+            <p>
+              순차적인 데이터를 저장하는 선형 자료구조입니다. 삽입, 삭제 연산을
+              시각화합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item" onclick="goToVisualization('stack')">
+          <div class="menu-icon">📚</div>
+          <div class="menu-content">
+            <h3>Stack</h3>
+            <p>
+              후입선출(LIFO) 구조의 선형 자료구조입니다. Push와 Pop 연산을
+              시각화합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item" onclick="goToVisualization('tree')">
+          <div class="menu-icon">🌳</div>
+          <div class="menu-content">
+            <h3>Tree</h3>
+            <p>
+              계층적 구조의 비선형 자료구조입니다. 배열 기반 완전 이진 트리
+              알고리즘을 시각화합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

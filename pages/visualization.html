@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자료구조 시각화</title>
+    <link rel="stylesheet" href="/css/visualization.css" />
+    <!-- D3.js CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="page-title">자료구조 시각화</h1>
+      <a href="/">← 홈으로 돌아가기</a>
+    </div>
+
+    <!-- 전체 시각화 영역 -->
+    <div id="main-container" class="main-container">
+      <div class="visualization-box">
+        <!-- 버튼 영역 -->
+        <div class="button-section">
+          <button class="canvas-reset-btn" onclick="resetCanvasView()">
+            중앙으로
+          </button>
+        </div>
+
+        <!-- 메모리 시각화 영역 -->
+        <div id="memory-view" class="memory-section"></div>
+
+        <!-- 자료구조 시각화 영역 -->
+        <div class="canvas-area">
+          <!-- 캔버스 기반 시각화 요소들 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 컨트롤 영역 -->
+    <div id="controls" class="controls-panel">
+      <!-- 자료구조별 버튼 동적 생성 -->
+    </div>
+
+    <!-- 개발용 컨트롤 영역 -->
+    <!-- <div id="dev-controls" class="controls-panel">
+      <h3>테스트 컨트롤</h3>
+      <button onclick="testBoxes()">박스 테스트</button>
+      <button onclick="testCircles()">원 테스트</button>
+      <button onclick="testLines()">연결선 테스트</button>
+      <button onclick="testMemory()">메모리 테스트</button>
+      <button onclick="clearCanvas()">캔버스 지우기</button>
+      <button onclick="clearMemoryVisualization()">메모리 지우기</button>
+    </div> -->
+
+    <script src="/js/main.js"></script>
+    <script src="/js/visualizer.js"></script>
+  </body>
+</html>
